@@ -47,12 +47,12 @@ public class Main {
         menuEjercicios.setForeground(menuTextColor);
         menuEjercicios.setFont(new Font("Arial", Font.BOLD, 14));
 
-        addMenuItem(menuEjercicios, "Ejercicio 18 (Cap 3.)", e -> ejecutarEjercicio("Ejercicio 18"));
-        addMenuItem(menuEjercicios, "Ejercicio 19 (Cap 3.)", e -> ejecutarEjercicio("Ejercicio 19"));
-        addMenuItem(menuEjercicios, "Ejercicio 7 (Cap 4.)", e -> ejecutarEjercicio("Ejercicio 7"));
-        addMenuItem(menuEjercicios, "Ejercicio 10 (Cap 4.)", e -> ejecutarEjercicio("Ejercicio 10"));
-        addMenuItem(menuEjercicios, "Ejercicio 22 (Cap 4.)", e -> ejecutarEjercicio("Ejercicio 22"));
-        addMenuItem(menuEjercicios, "Ejercicio 23 (Cap 4.)", e -> ejecutarEjercicio("Ejercicio 23"));
+        addMenuItem(menuEjercicios, "Ejercicio 18 (Cap 3.)", e -> new Ejercicio18().ejecutar());
+        addMenuItem(menuEjercicios, "Ejercicio 19 (Cap 3.)", e -> new Ejercicio19().ejecutar());
+        addMenuItem(menuEjercicios, "Ejercicio 7 (Cap 4.)", e -> new Ejercicio7().ejecutar());
+        addMenuItem(menuEjercicios, "Ejercicio 10 (Cap 4.)", e -> new Ejercicio10().ejecutar());
+        addMenuItem(menuEjercicios, "Ejercicio 22 (Cap 4.)", e -> new Ejercicio22().ejecutar());
+        addMenuItem(menuEjercicios, "Ejercicio 23 (Cap 4.)", e -> new Ejercicio23().ejecutar());
 
         menuBar.add(menuEjercicios);
         mainFrame.setJMenuBar(menuBar);
@@ -66,9 +66,5 @@ public class Main {
         menuItem.setFont(new Font("Arial", Font.PLAIN, 12));
         menuItem.addActionListener(action);
         menu.add(menuItem);
-    }
-
-    private static void ejecutarEjercicio(String ejercicio) {
-        JOptionPane.showMessageDialog(null, "Ejecutando " + ejercicio, "Información", JOptionPane.INFORMATION_MESSAGE);
     }
 }
