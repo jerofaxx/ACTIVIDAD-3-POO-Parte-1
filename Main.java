@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame mainFrame = new JFrame("ACTIVIDAD 3 POO");
+        JFrame mainFrame = new JFrame("ACTIVIDAD 3 POO Parte 1");
         mainFrame.setSize(500, 600);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
