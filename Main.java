@@ -27,7 +27,7 @@ public class Main {
         mainFrame.add(header);
 
         try {
-            ImageIcon originalIcon = new ImageIcon("Images/gatito.jpg");
+            ImageIcon originalIcon = new ImageIcon("gatito.jpg");
             Image scaledImage = originalIcon.getImage().getScaledInstance(200, 200, Image.SCALE_SMOOTH);
             ImageIcon scaledIcon = new ImageIcon(scaledImage);
             JLabel gatoLabel = new JLabel(scaledIcon);
